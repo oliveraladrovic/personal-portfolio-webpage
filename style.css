@@ -8,6 +8,8 @@
 body {
   font-family: sans-serif;
 }
+
+/* H E A D E R */
 header {
   position: fixed;
   top: 0;
@@ -22,6 +24,7 @@ header {
   align-items: center;
   max-width: 1250px;
   margin: auto;
+  padding: 0 20px;
 }
 h2 {
   font-family: 'Lobster', cursive;
@@ -35,23 +38,33 @@ span {
 #logo a {
   text-decoration: none;
 }
+
+/* W E L C O M E   S E C T I O N */
 #welcome-section {
   height: 100vh;
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  padding-top: 70px;
 }
 #main-left {
-  width: 50%;
-  padding: 1%;
+  padding: 0 20px;
 }
 #main-left img {
-  width: 100%;
+  box-shadow: 1px 1px 2px black, 0 0 25px rgba(0, 0, 255, 0.4),
+    0 0 5px rgba(0, 0, 139, 0.2);
+  border-radius: 10%;
+  width: 400px;
+  display: block;
+  margin: auto;
 }
 #main-right {
-  width: 50%;
-  padding: 1%;
   font-family: 'Permanent Marker', cursive;
-  font-size: 300%;
+  font-size: 48px;
   color: #333333;
+  padding: 0 20px;
 }
 #main-right p,
 #main-right h1 {
@@ -61,8 +74,35 @@ span {
   color: black;
 }
 
+@media (max-width: 1093px) {
+  #main-right {
+    font-size: 40px;
+  }
+}
+@media (max-width: 993px) {
+  #main-right {
+    font-size: 32px;
+  }
+}
+@media (max-width: 893px) {
+  #main-left img {
+    width: 300px;
+  }
+  #main-right {
+    font-size: 24px;
+  }
+}
 @media (max-width: 600px) {
-  section {
-    background-color: blue;
+  #main-left img {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  #welcome-section {
+    flex-direction: column-reverse;
+  }
+  #main-left img {
+    width: auto;
+    height: 200px;
   }
 }
