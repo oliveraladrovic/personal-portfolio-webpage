@@ -1,9 +1,64 @@
-#navbar {
+@import url('https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
   position: fixed;
   top: 0;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  margin: auto;
+}
+h2 {
+  font-family: 'Lobster', cursive;
+  color: lightblue;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+span {
+  font-size: 130%;
+  color: white;
+}
+#logo a {
+  text-decoration: none;
 }
 #welcome-section {
   height: 100vh;
+  justify-content: space-evenly;
+}
+#main-left {
+  width: 50%;
+  padding: 1%;
+}
+#main-left img {
+  width: 100%;
+}
+#main-right {
+  width: 50%;
+  padding: 1%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 300%;
+  color: #333333;
+}
+#main-right p,
+#main-right h1 {
+  transform: rotate(-7deg);
+}
+#main-right strong {
+  color: black;
 }
 
 @media (max-width: 600px) {
