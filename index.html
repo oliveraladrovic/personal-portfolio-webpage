@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Personal Portfolio Webpage</title>
+    <script
+      src="https://kit.fontawesome.com/fc1b155e94.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- H E A D E R -->
@@ -18,7 +22,9 @@
           <small>Link to Your Own Web</small>
         </div>
         <nav id="navbar">
-          <a href="#projects">Home</a>
+          <a href="#welcome-section">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -38,10 +44,71 @@
     </section>
     <!-- P R O J E C T S -->
     <section id="projects">
+      <div id="projects-title">
+        <h3>Check out my recent work:</h3>
+      </div>
       <div class="project-tile">
-        <a href="#">Link to a project</a>
+        <a
+          href="https://oliveraladrovic.github.io/technical-documentation-page/"
+          target="_blank"
+          ><img
+            src="./img/documentation.jpg"
+            alt="Picture of Technical Documentation Page project"
+        /></a>
+        <p>Technical Documentation Page</p>
+      </div>
+      <div class="project-tile">
+        <a
+          href="https://oliveraladrovic.github.io/product-landing-page/"
+          target="_blank"
+          ><img
+            src="./img/product.jpg"
+            alt="Picture of Product Landing Page Project"
+        /></a>
+        <p>Product Landing Page</p>
+      </div>
+      <div class="project-tile">
+        <a href="https://oliveraladrovic.github.io/form-survey/" target="_blank"
+          ><img src="./img/survey.jpg" alt="Picture of Form Survey project"
+        /></a>
+        <p>Form Survey</p>
+      </div>
+      <div class="project-tile">
+        <a
+          href="https://oliveraladrovic.github.io/tribute-page/"
+          target="_blank"
+          ><img src="./img/tribute.jpg" alt="Picture of Tribute Page project"
+        /></a>
+        <p>Tribute Page</p>
       </div>
     </section>
-    <a href="#" id="profile-link" target="_blank">GitHub profile</a>
+    <!-- C O N T A C T -->
+    <section id="contact">
+      <div id="contact-wrapper">
+        <p>If you like my work feel free to write me:</p>
+        <a href="mailto:oliver.aladrovic@gmail.com" class="contact-link"
+          ><i class="fas fa-at"></i><br />E-mail</a
+        >
+        <p>
+          Or if some of my code could help you, you can find all this projects
+          on:
+        </p>
+        <div id="contact-links">
+          <a
+            href="https://github.com/oliveraladrovic"
+            id="profile-link"
+            class="contact-link"
+            target="_blank"
+            ><i class="fab fa-github"></i><br />GitHub</a
+          >
+          <a
+            href="https://codepen.io/oliveraladrovic"
+            class="contact-link"
+            target="_blank"
+            ><i class="fab fa-codepen"></i><br />codepen.io</a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
